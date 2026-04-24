@@ -125,24 +125,24 @@ So:
 window
 ```
 
-## `this` Flow Diagram
+## 📊 `this` Flow Diagram
 
 ```mermaid
 flowchart TD
 
-A[Global Scope (window)]
-A --> B[prop: this → window]
-A --> C[getMarks (arrow) → this = window]
+A[Global Scope - window]
+A --> B[prop this -> window]
+A --> C[getMarks arrow -> window]
 
 D[student object]
-D --> E[getName()]
-E --> F[this = student]
+D --> E[getName]
+E --> F[this student]
 
-D --> G[getInfo1()]
-G --> H[Arrow inside setTimeout]
-H --> I[this = student]
+D --> G[getInfo1]
+G --> H[arrow inside setTimeout]
+H --> I[this student]
 
-D --> J[getInfo2()]
-J --> K[Normal function inside setTimeout]
-K --> L[this = window]
+D --> J[getInfo2]
+J --> K[normal function inside setTimeout]
+K --> L[this window]
 ```
