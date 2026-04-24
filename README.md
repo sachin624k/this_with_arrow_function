@@ -125,7 +125,7 @@ So:
 window
 ```
 
-## 📊 `this` Flow Diagram
+## `this` Flow Diagram
 
 ```mermaid
 flowchart TD
